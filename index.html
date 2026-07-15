@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidur Anand — Brand, Media & D2C Leadership</title>
+<meta name="description" content="Vidur Anand — Strategic marketing & brand leader. Taking legacy Indian brands direct-to-consumer: brand, media, and commerce as one P&L conversation.">
+<style>
+  :root{
+    --navy:#0f2340;
+    --navy-dark:#0a1830;
+    --cream:#f7f4ee;
+    --gold:#c9a24b;
+    --ink:#1a1a1a;
+    --muted:#6b7280;
+    --line:#e5e1d8;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Georgia','Times New Roman',serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{font-family:'Helvetica Neue',Arial,sans-serif;font-weight:700;letter-spacing:-0.01em;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:12px;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  /* NAV */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(15,35,64,0.96);
+    backdrop-filter:blur(6px);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;
+  }
+  nav .brand{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    color:var(--cream);font-weight:700;font-size:16px;letter-spacing:0.02em;
+  }
+  nav ul{list-style:none;display:flex;gap:26px;}
+  nav a{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    color:#cbd5e1;text-decoration:none;font-size:13px;
+    text-transform:uppercase;letter-spacing:0.06em;
+  }
+  nav a:hover{color:var(--gold);}
+  .nav-toggle{display:none;background:none;border:none;color:var(--cream);font-size:22px;cursor:pointer;}
+
+  /* HERO */
+  header.hero{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-dark) 100%);
+    color:var(--cream);
+    padding:72px 0 64px;
+  }
+  .hero .wrap{display:flex;align-items:center;gap:56px;flex-wrap:wrap;}
+  .hero-photo{
+    width:180px;height:180px;border-radius:50%;
+    overflow:hidden;border:3px solid var(--gold);
+    flex-shrink:0;
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;}
+  .hero-text{flex:1;min-width:280px;}
+  .hero-text h1{font-size:40px;margin-bottom:8px;color:#fff;}
+  .hero-line{
+    font-size:19px;color:#e2c98a;font-family:'Helvetica Neue',Arial,sans-serif;
+    font-weight:400;margin-bottom:18px;line-height:1.5;
+  }
+  .hero-desc{color:#c6d0e0;font-size:16px;max-width:600px;margin-bottom:26px;}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    display:inline-block;padding:11px 22px;border-radius:2px;
+    text-decoration:none;font-size:13px;font-weight:700;
+    letter-spacing:0.04em;text-transform:uppercase;
+    transition:opacity .15s;
+  }
+  .btn:hover{opacity:0.85;}
+  .btn-gold{background:var(--gold);color:var(--navy-dark);}
+  .btn-outline{border:1px solid #6b7d99;color:#e5e9f0;}
+
+  /* SECTIONS */
+  section{padding:64px 0;}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  h2.section-title{font-size:28px;margin-bottom:6px;color:var(--navy);}
+  .section-sub{color:var(--muted);font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;margin-bottom:36px;max-width:640px;}
+
+  /* LANE */
+  .lane-quote{
+    font-size:22px;line-height:1.55;color:var(--navy);
+    border-left:3px solid var(--gold);padding-left:24px;font-style:italic;
+    max-width:760px;
+  }
+
+  /* CASE STUDIES */
+  .case{
+    display:grid;grid-template-columns:1fr 1fr;gap:40px;
+    padding:36px 0;border-bottom:1px solid var(--line);align-items:center;
+  }
+  .case:last-child{border-bottom:none;}
+  .case-video{position:relative;width:100%;padding-top:56.25%;background:#0a1830;border-radius:4px;overflow:hidden;}
+  .case-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+  .case-body h3{font-size:21px;color:var(--navy);margin-bottom:10px;}
+  .case-meta{
+    font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;
+    color:var(--gold);text-transform:uppercase;letter-spacing:0.06em;
+    font-weight:700;margin-bottom:12px;
+  }
+  .case-body p{color:#3c3c3c;font-size:15.5px;margin-bottom:14px;}
+  .stat-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:16px;}
+  .stat{font-family:'Helvetica Neue',Arial,sans-serif;}
+  .stat .num{font-size:24px;font-weight:800;color:var(--navy);display:block;}
+  .stat .lbl{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;}
+  .case-links{margin-top:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;}
+  .case-links a{color:var(--navy);text-decoration:underline;margin-right:16px;}
+
+  /* VIDEO GALLERY */
+  .video-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:22px;
+  }
+  .video-card{
+    background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    cursor:pointer;transition:transform .15s, box-shadow .15s;
+  }
+  .video-card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(15,35,64,0.12);}
+  .thumb-wrap{position:relative;width:100%;padding-top:56.25%;background:#0a1830;}
+  .thumb-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
+  .play-badge{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:46px;height:46px;border-radius:50%;background:rgba(15,35,64,0.85);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .play-badge::after{
+    content:'';border-style:solid;border-width:8px 0 8px 13px;
+    border-color:transparent transparent transparent #fff;margin-left:3px;
+  }
+  .video-card .cap{padding:14px 16px;}
+  .video-card .cap h4{font-size:14.5px;color:var(--navy);margin-bottom:4px;font-family:'Helvetica Neue',Arial,sans-serif;}
+  .video-card .cap span{font-size:12px;color:var(--muted);font-family:'Helvetica Neue',Arial,sans-serif;}
+
+  /* MODAL */
+  .modal-bg{
+    display:none;position:fixed;inset:0;background:rgba(10,24,48,0.92);
+    z-index:100;align-items:center;justify-content:center;padding:24px;
+  }
+  .modal-bg.open{display:flex;}
+  .modal-inner{width:100%;max-width:860px;}
+  .modal-video{position:relative;width:100%;padding-top:56.25%;background:#000;}
+  .modal-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+  .modal-close{
+    text-align:right;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;
+    cursor:pointer;padding:10px 0;font-size:14px;letter-spacing:0.05em;
+  }
+
+  /* TIMELINE */
+  .timeline{border-left:2px solid var(--line);padding-left:28px;margin-left:6px;}
+  .tl-item{position:relative;padding-bottom:34px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:'';position:absolute;left:-33.5px;top:4px;
+    width:11px;height:11px;border-radius:50%;background:var(--gold);
+    border:2px solid var(--cream);
+  }
+  .tl-role{font-family:'Helvetica Neue',Arial,sans-serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .tl-org{font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:var(--gold);font-weight:600;margin-bottom:2px;}
+  .tl-date{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:var(--muted);margin-bottom:8px;}
+  .tl-item ul{margin-left:18px;}
+  .tl-item li{font-size:14.5px;color:#3c3c3c;margin-bottom:4px;}
+
+  /* AWARDS */
+  .award-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+  .award-card{
+    background:var(--navy);color:var(--cream);padding:22px;border-radius:6px;
+    border-top:3px solid var(--gold);
+  }
+  .award-card h4{font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;margin-bottom:6px;}
+  .award-card span{font-size:12.5px;color:#a9b6cc;font-family:'Helvetica Neue',Arial,sans-serif;}
+
+  /* SKILLS */
+  .chip-row{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{
+    font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;
+    background:#fff;border:1px solid var(--line);padding:8px 14px;
+    border-radius:20px;color:var(--navy);
+  }
+
+  /* FOOTER */
+  footer{background:var(--navy-dark);color:#a9b6cc;padding:48px 0 30px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+  footer h3{color:#fff;font-size:20px;margin-bottom:10px;}
+  footer a.contact-link{color:var(--gold);text-decoration:none;font-family:'Helvetica Neue',Arial,sans-serif;}
+  footer .fine{font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;margin-top:30px;color:#5c6b85;}
+
+  .placeholder-note{
+    font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:var(--muted);
+    background:#fff;border:1px dashed var(--line);padding:14px 18px;border-radius:6px;margin-top:24px;
+  }
+
+  @media (max-width:760px){
+    nav ul{
+      position:absolute;top:100%;left:0;right:0;background:var(--navy-dark);
+      flex-direction:column;padding:16px 24px;gap:16px;display:none;
+    }
+    nav ul.open{display:flex;}
+    .nav-toggle{display:block;}
+    .hero .wrap{flex-direction:column;text-align:center;gap:28px;}
+    .hero-desc{margin-left:auto;margin-right:auto;}
+    .btn-row{justify-content:center;}
+    .case{grid-template-columns:1fr;}
+    h1{font-size:30px !important;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">VIDUR ANAND</div>
+    <button class="nav-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">&#9776;</button>
+    <ul id="navlinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#films">Films</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-photo"><img src="assets/headshot.png" alt="Vidur Anand"></div>
+    <div class="hero-text">
+      <h1>Vidur Anand</h1>
+      <div class="hero-line">Taking legacy Indian brands direct-to-consumer — brand, media, and commerce as one P&amp;L conversation.</div>
+      <div class="hero-desc">Strategic marketing &amp; brand leader with 13+ years across Automotive, E-Commerce, Fashion &amp; Retail. Currently Head of Brand &amp; Media at CEAT, running ~₹150Cr in media spend and the D2C/commerce stack behind it.</div>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="assets/Vidur_Anand_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/vidur-anand/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="section-title">Case studies</h2>
+    <p class="section-sub">Three campaigns told from the operator's seat — the decision, the constraint, and the number — with the actual films embedded, not just described.</p>
+
+    <div class="case">
+      <div class="case-video">
+        <iframe src="https://www.youtube.com/embed/I6n7pWeIjK0" title="Built for Grip — CEAT x Zoya Akhtar" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="case-body">
+        <div class="case-meta">Brand Campaign — CEAT, 2024–25</div>
+        <h3>Built for Grip, with Zoya Akhtar</h3>
+        <p>Conceptualised and led execution of a national campaign built around a single insight: even a filmmaker chasing the perfect cinematic skid can't get one out of a tyre engineered for grip. Directed by Shashanka Chaturvedi via Ogilvy India, shot across dry, rain-soaked, and gravel conditions in Baku, Azerbaijan, and fronted by Zoya Akhtar — who shared the film on her own Instagram, extending reach beyond paid media.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="num">66%</span><span class="lbl">VTR on YouTube</span></div>
+          <div class="stat"><span class="num">6%</span><span class="lbl">VTR on Meta</span></div>
+        </div>
+        <div class="case-links"><a href="https://www.youtube.com/watch?v=I6n7pWeIjK0" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-video">
+        <iframe src="https://www.youtube.com/embed/4Xx3OUPZSgA" title="Crafted for the Curious — Lunar Adventure" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="case-body">
+        <div class="case-meta">Brand Campaign Series — CEAT Premium/Luxury SUV</div>
+        <h3>Crafted for the Curious</h3>
+        <p>Led the premium/luxury SUV positioning platform behind CEAT's CrossDrive AT range — a multi-film exploration series (marble-city terrain, lunar-landscape shoots, and more) built to reframe a legacy tyre brand for a curiosity-led, premium buyer.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="num">+8%</span><span class="lbl">Top-of-mind recall</span></div>
+          <div class="stat"><span class="num">+5%</span><span class="lbl">Consideration</span></div>
+          <div class="stat"><span class="num">2x</span><span class="lbl">Premium segment sales growth</span></div>
+        </div>
+        <div class="case-links"><a href="https://www.youtube.com/watch?v=4Xx3OUPZSgA" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-video">
+        <img src="https://img.youtube.com/vi/0AlWjXJmong/hqdefault.jpg" alt="CEAT D2C platform and WhatsApp commerce" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+      </div>
+      <div class="case-body">
+        <div class="case-meta">D2C Platform &amp; Conversational Commerce — CEAT</div>
+        <h3>Building CEAT's D2C platform in under 3 months</h3>
+        <p>Owned the sales and performance stack behind ceat.com — built on Adobe Experience Manager and rolled out in under three months, per Adobe's and DEPT's own customer case studies. Layered a Salesforce Marketing Cloud CDP for personalized "n=1" journeys, and rolled out WhatsApp commerce and lead-gen chatbots with JioHaptik, which independently reported a 542% increase in leads from the conversational program.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="num">₹30Cr+</span><span class="lbl">GMV across channels</span></div>
+          <div class="stat"><span class="num">542%</span><span class="lbl">Lead increase (Haptik)</span></div>
+          <div class="stat"><span class="num">-15%</span><span class="lbl">Cost per lead</span></div>
+          <div class="stat"><span class="num">+5%</span><span class="lbl">Repeat purchases</span></div>
+        </div>
+        <div class="case-links">
+          <a href="https://business.adobe.com/nz/customer-success-stories/ceat-case-study.html" target="_blank" rel="noopener">Adobe case study ↗</a>
+          <a href="https://www.deptagency.com/case/building-a-market-leading-d2c-platform-with-adobe-experience-manager/" target="_blank" rel="noopener">DEPT case study ↗</a>
+          <a href="https://www.haptik.ai/resources/case-study/ceat" target="_blank" rel="noopener">Haptik case study ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="films" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Film &amp; Content IP</div>
+    <h2 class="section-title">Campaign films</h2>
+    <p class="section-sub">Every film below was produced under a campaign or content property I own or led. Click any card to watch.</p>
+
+    <div class="video-grid" id="videoGrid"></div>
+
+    <div class="placeholder-note">More behind-the-scenes photography and campaign stills to be added here.</div>
+  </div>
+</section>
+
+<section id="lane">
+  <div class="wrap">
+    <div class="eyebrow">Positioning</div>
+    <h2 class="section-title">What I'm known for</h2>
+    <p class="lane-quote">Taking 60-year-old Indian brands direct-to-consumer — brand, media, and commerce as one P&amp;L conversation, not three separate departments.</p>
+  </div>
+</section>
+
+<section id="career" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">13+ Years</div>
+    <h2 class="section-title">Career</h2>
+    <p class="section-sub">Automotive, e-commerce, fashion &amp; retail — a track record of quantified wins at every stop, from market research to P&amp;L ownership.</p>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-role">Head — Brand &amp; Media</div>
+        <div class="tl-org">CEAT Limited</div>
+        <div class="tl-date">Oct 2022 — Present</div>
+        <ul>
+          <li>Own ~₹150Cr in ATL/BTL/Sports media spend and the full creative, media &amp; activation agency network</li>
+          <li>Led "Built for Grip" (Zoya Akhtar) and "Crafted for the Curious" — +8% TOM, +5% consideration, 2x premium segment sales growth</li>
+          <li>Built cricket content IP: CEAT Timeout, Beyond the Scoreboard, Beyond That Horizon</li>
+          <li>Run sports marketing portfolio: BCCI, international football clubs, CCR Awards, CEAT's cricket bat P&amp;L (₹5Cr+)</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Senior Manager — Digital Sales &amp; Experience</div>
+        <div class="tl-org">CEAT Limited</div>
+        <div class="tl-date">Feb 2021 — Sept 2022</div>
+        <ul>
+          <li>Built ceat.com's D2C platform on Adobe Experience Manager in under 3 months; ₹30Cr+ GMV across channels</li>
+          <li>Cut CPL 15%, CAC 5%, improved lead conversion 20% via SEO &amp; performance marketing</li>
+          <li>Rolled out SFMC-based CDP and WhatsApp commerce with JioHaptik — 542% lead increase</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Key Account Manager — E-Commerce</div>
+        <div class="tl-org">Pantaloons, Aditya Birla Fashion &amp; Retail</div>
+        <div class="tl-date">Jan 2019 — Dec 2020</div>
+        <ul>
+          <li>Managed ₹50Cr+ P&amp;L across Pantaloons.com, Amazon, Tata Cliq; 106% YoY unit growth on Cloudtail</li>
+          <li>Launched 10 non-Pantaloons brands online, ₹4Cr incremental revenue</li>
+          <li>Improved marketing ROI to 5x and cut CAC 33% across Google Ads &amp; Meta</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Customer Success Manager — North</div>
+        <div class="tl-org">Shoptimize India Pvt Ltd (now Grass.AI)</div>
+        <div class="tl-date">Aug 2017 — Nov 2018</div>
+        <ul>
+          <li>Built D2C growth strategy for clients including ITC Masterchef, Luminous, Lotus Herbals, Borges, Schoolkart</li>
+          <li>Drove a 200% revenue increase in 3 months for an FMCG brand through content &amp; digital marketing</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Senior Manager — Fashion &amp; Accessories</div>
+        <div class="tl-org">Snapdeal</div>
+        <div class="tl-date">Apr 2015 — Aug 2017</div>
+        <ul>
+          <li>Led a 5-person team; 30% increase in unit sales in H1'16; "Outstanding Performance" award, Men's Fashion</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">PGDM, Marketing</div>
+        <div class="tl-org">International Management Institute (IMI), New Delhi</div>
+        <div class="tl-date">2013 — 2015</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Client Service Executive</div>
+        <div class="tl-org">Nielsen India Pvt Ltd</div>
+        <div class="tl-date">Apr 2011 — Aug 2012</div>
+        <ul>
+          <li>Centre of Excellence for MOTOR, a shopper research protocol for The Coca-Cola Company across 10+ Nielsen markets in Asia &amp; Latin America</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Research Associate</div>
+        <div class="tl-org">Synovate India Pvt Ltd</div>
+        <div class="tl-date">Jun 2010 — Feb 2011</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-role">Bachelor of Business Studies, Marketing</div>
+        <div class="tl-org">Shaheed Sukhdev College of Business Studies, Delhi University</div>
+        <div class="tl-date">2007 — 2010</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="eyebrow">Recognition</div>
+    <h2 class="section-title">Awards</h2>
+    <div class="award-grid">
+      <div class="award-card"><h4>ET Digiplus Awards</h4><span>Automobile category</span></div>
+      <div class="award-card"><h4>Kyoorius Blue Elephant 2025</h4><span>Experience &amp; Online Engagement</span></div>
+      <div class="award-card"><h4>Social Samosa — Gold</h4><span>Friendship Day, Long Form Content</span></div>
+      <div class="award-card"><h4>CEAT — Best Performer</h4><span>FY23, individual</span></div>
+      <div class="award-card"><h4>Pantaloons — Emerging Leader</h4><span>Individual recognition</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Toolkit</div>
+    <h2 class="section-title">Skills &amp; tools</h2>
+    <div class="chip-row" style="margin-bottom:20px;">
+      <span class="chip">Brand Strategy &amp; Management</span>
+      <span class="chip">Digital/Traditional Media Planning</span>
+      <span class="chip">P&amp;L Management</span>
+      <span class="chip">Growth &amp; Performance Marketing</span>
+      <span class="chip">CRM &amp; Digital Transformation</span>
+      <span class="chip">Sports Marketing</span>
+      <span class="chip">E-Commerce &amp; D2C</span>
+      <span class="chip">Team Leadership</span>
+      <span class="chip">Agency &amp; Stakeholder Management</span>
+    </div>
+    <div class="chip-row">
+      <span class="chip">Adobe Experience Manager</span>
+      <span class="chip">Salesforce Marketing Cloud</span>
+      <span class="chip">Magento</span>
+      <span class="chip">Adobe Analytics</span>
+      <span class="chip">Google Analytics</span>
+      <span class="chip">Google Ads</span>
+      <span class="chip">Meta Ads Manager</span>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <h3>Let's talk</h3>
+      <p><a class="contact-link" href="mailto:viduranand30@gmail.com">viduranand30@gmail.com</a></p>
+      <p style="margin-top:6px;"><a class="contact-link" href="https://www.linkedin.com/in/vidur-anand/" target="_blank" rel="noopener">linkedin.com/in/vidur-anand</a></p>
+    </div>
+    <div>
+      <h3>Based in</h3>
+      <p>Mumbai, India</p>
+    </div>
+  </div>
+  <div class="wrap fine">© 2026 Vidur Anand. Campaign films are the property of their respective brands and agencies; embedded here with attribution for portfolio purposes.</div>
+</footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal-inner">
+    <div class="modal-close" onclick="closeModal()">Close ✕</div>
+    <div class="modal-video" id="modalVideoWrap"></div>
+  </div>
+</div>
+
+<script>
+  const videos = [
+    {title:"Built for Grip", sub:"CEAT × Zoya Akhtar", id:"I6n7pWeIjK0", thumb:"https://img.youtube.com/vi/I6n7pWeIjK0/hqdefault.jpg", type:"video"},
+    {title:"Crafted for the Curious", sub:"Lunar Adventure film", id:"4Xx3OUPZSgA", thumb:"https://img.youtube.com/vi/4Xx3OUPZSgA/hqdefault.jpg", type:"video"},
+    {title:"ZR Rated", sub:"Product launch film", id:"i9nNigC_6LE", thumb:"https://img.youtube.com/vi/i9nNigC_6LE/hqdefault.jpg", type:"video"},
+    {title:"Calm", sub:"Product launch film", id:"57abWZAYRgg", thumb:"https://img.youtube.com/vi/57abWZAYRgg/hqdefault.jpg", type:"video"},
+    {title:"Steel Radial", sub:"Product launch film", id:"slAu8UAdQ50", thumb:"https://img.youtube.com/vi/slAu8UAdQ50/hqdefault.jpg", type:"video"},
+    {title:"CEAT Timeout", sub:"Cricket content IP — playlist", id:"PL1iTBqcep4Ji5XvQEHA0DSZRWyStvrVYX", thumb:"https://img.youtube.com/vi/0AlWjXJmong/hqdefault.jpg", type:"playlist"},
+    {title:"Beyond the Scoreboard", sub:"Cricket content IP — playlist", id:"PLr6-PKWXsxCaymL4bQ9jcBwRiM1R3t4oR", thumb:"https://img.youtube.com/vi/0AlWjXJmong/hqdefault.jpg", type:"playlist"},
+    {title:"Beyond That Horizon", sub:"Instagram reel", url:"https://www.instagram.com/reel/C_0c7nrRsSs/", thumb:"https://img.youtube.com/vi/0AlWjXJmong/hqdefault.jpg", type:"external"},
+    {title:"CCR Awards", sub:"Sports marketing property", id:"sCn3rofRkEQ", thumb:"https://img.youtube.com/vi/sCn3rofRkEQ/hqdefault.jpg", type:"video"}
+  ];
+
+  const grid = document.getElementById('videoGrid');
+  videos.forEach((v, i) => {
+    const card = document.createElement('div');
+    card.className = 'video-card';
+    card.innerHTML = `
+      <div class="thumb-wrap">
+        <img src="${v.thumb}" alt="${v.title}" loading="lazy">
+        <div class="play-badge"></div>
+      </div>
+      <div class="cap"><h4>${v.title}</h4><span>${v.sub}</span></div>
+    `;
+    card.addEventListener('click', () => openVideo(v));
+    grid.appendChild(card);
+  });
+
+  function openVideo(v){
+    if(v.type === 'external'){
+      window.open(v.url, '_blank', 'noopener');
+      return;
+    }
+    const wrap = document.getElementById('modalVideoWrap');
+    const src = v.type === 'playlist'
+      ? `https://www.youtube.com/embed/videoseries?list=${v.id}&autoplay=1`
+      : `https://www.youtube.com/embed/${v.id}?autoplay=1`;
+    wrap.innerHTML = `<iframe src="${src}" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+    document.getElementById('modalBg').classList.add('open');
+  }
+  function closeModal(){
+    document.getElementById('modalBg').classList.remove('open');
+    document.getElementById('modalVideoWrap').innerHTML = '';
+  }
+  document.getElementById('modalBg').addEventListener('click', e => {
+    if(e.target.id === 'modalBg') closeModal();
+  });
+
+  // mobile nav
+  document.querySelectorAll('#navlinks a').forEach(a=>{
+    a.addEventListener('click', ()=>document.getElementById('navlinks').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
