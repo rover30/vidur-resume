@@ -250,23 +250,29 @@
   }
   .modal-close:hover{border-color:var(--gold);color:var(--gold);}
 
-  /* ---------- TIMELINE ---------- */
-  .timeline{border-left:1px solid var(--line);padding-left:clamp(24px,4vw,40px);margin-left:6px;}
-  .tl-item{position:relative;padding-bottom:clamp(32px,4vw,44px);}
-  .tl-item:last-child{padding-bottom:0;}
-  .tl-item::before{
-    content:'';position:absolute;top:7px;
-    left:calc(-1 * clamp(24px,4vw,40px) - 5.5px - 1px);
-    width:11px;height:11px;border-radius:50%;background:var(--gold);
-    box-shadow:0 0 0 4px var(--bg);
+  /* ---------- CAREER / LOGO GRID ---------- */
+  .logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
+  .logo-card{
+    display:flex;gap:16px;align-items:flex-start;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;padding:20px;
   }
-  section.alt .tl-item::before{box-shadow:0 0 0 4px var(--surface);}
-  .tl-date{font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:4px;}
-  .tl-role{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.35rem);font-weight:600;}
-  .tl-org{font-size:14px;color:var(--muted);margin-bottom:10px;}
-  .tl-item ul{margin-left:18px;}
-  .tl-item li{font-size:14.5px;color:var(--muted);margin-bottom:5px;}
-  .tl-item li strong{color:var(--text);font-weight:600;}
+  .logo-mark{
+    width:52px;height:52px;border-radius:12px;background:#fff;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;padding:8px;
+  }
+  .logo-mark img{width:100%;height:100%;object-fit:contain;}
+  .logo-mark--text{
+    background:var(--gold-dim);color:var(--gold);font-family:var(--serif);
+    font-weight:600;font-size:20px;padding:0;
+  }
+  .logo-org{font-family:var(--serif);font-size:clamp(1.02rem,1.6vw,1.15rem);font-weight:600;margin-bottom:6px;}
+  .logo-role{font-size:13.5px;color:var(--text);margin-bottom:2px;}
+  .logo-date{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
+  .logo-role:last-child,.logo-date:last-child{margin-bottom:0;}
+  .edu-list{margin-top:32px;border-top:1px solid var(--line);padding-top:24px;}
+  .edu-item{font-size:14px;color:var(--muted);margin-bottom:8px;}
+  .edu-item strong{color:var(--text);font-weight:600;}
+  .edu-item:last-child{margin-bottom:0;}
 
   /* ---------- AWARDS ---------- */
   .award-list{border-top:1px solid var(--line);}
@@ -467,78 +473,62 @@
     <h2 class="section-title reveal">Career</h2>
     <p class="section-sub reveal">Automotive, e-commerce, fashion &amp; retail — quantified wins at every stop, from market research to P&amp;L ownership.</p>
 
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-date">Oct 2022 — Present</div>
-        <div class="tl-role">Head — Brand &amp; Media</div>
-        <div class="tl-org">CEAT Limited, Mumbai</div>
-        <ul>
-          <li>Own <strong>~₹150Cr in ATL/BTL/sports media spend</strong> and the full creative, media &amp; activation agency network</li>
-          <li>Led <strong>Built for Grip</strong> (Zoya Akhtar) and <strong>Crafted for the Curious</strong> — +8% top-of-mind recall, +5% consideration, 2x premium segment sales growth</li>
-          <li>Built cricket content IP: CEAT Timeout, Beyond the Scoreboard, Beyond That Horizon</li>
-          <li>Run the sports marketing portfolio: BCCI, international football clubs, CCR Awards, and CEAT's cricket bat P&amp;L (<strong>₹5Cr+</strong>)</li>
-        </ul>
+    <div class="logo-grid reveal">
+      <div class="logo-card">
+        <div class="logo-mark"><img src="assets/logos/ceat.png" alt="CEAT Limited" width="52" height="52" loading="lazy"></div>
+        <div>
+          <div class="logo-org">CEAT Limited, Mumbai</div>
+          <div class="logo-role">Head — Brand &amp; Media</div>
+          <div class="logo-date">Oct 2022 — Present</div>
+          <div class="logo-role">Senior Manager — Digital Sales &amp; Experience</div>
+          <div class="logo-date">Feb 2021 — Sept 2022</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Feb 2021 — Sept 2022</div>
-        <div class="tl-role">Senior Manager — Digital Sales &amp; Experience</div>
-        <div class="tl-org">CEAT Limited</div>
-        <ul>
-          <li>Built ceat.com's D2C platform on Adobe Experience Manager <strong>in under 3 months</strong>; ₹30Cr+ GMV across channels</li>
-          <li>Cut cost per lead 15% and CAC 5%; improved lead conversion 20% via SEO &amp; performance marketing</li>
-          <li>Rolled out an SFMC-based CDP and WhatsApp commerce with JioHaptik — <strong>542% lead increase</strong></li>
-        </ul>
+      <div class="logo-card">
+        <div class="logo-mark"><img src="assets/logos/pantaloons.png" alt="Pantaloons" width="52" height="52" loading="lazy"></div>
+        <div>
+          <div class="logo-org">Pantaloons, Aditya Birla Fashion &amp; Retail</div>
+          <div class="logo-role">Key Account Manager — E-Commerce</div>
+          <div class="logo-date">Jan 2019 — Dec 2020</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Jan 2019 — Dec 2020</div>
-        <div class="tl-role">Key Account Manager — E-Commerce</div>
-        <div class="tl-org">Pantaloons, Aditya Birla Fashion &amp; Retail</div>
-        <ul>
-          <li>Managed a <strong>₹50Cr+ P&amp;L</strong> across Pantaloons.com, Amazon and Tata Cliq; 106% YoY unit growth on Cloudtail</li>
-          <li>Launched 10 non-Pantaloons brands online — ₹4Cr incremental revenue</li>
-          <li>Improved marketing ROI to <strong>5x</strong> and cut CAC 33% across Google Ads &amp; Meta</li>
-        </ul>
+      <div class="logo-card">
+        <div class="logo-mark logo-mark--text" aria-hidden="true">S</div>
+        <div>
+          <div class="logo-org">Shoptimize India (now Grass.AI)</div>
+          <div class="logo-role">Customer Success Manager — North</div>
+          <div class="logo-date">Aug 2017 — Nov 2018</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Aug 2017 — Nov 2018</div>
-        <div class="tl-role">Customer Success Manager — North</div>
-        <div class="tl-org">Shoptimize India (now Grass.AI)</div>
-        <ul>
-          <li>Built D2C growth strategy for ITC Masterchef, Luminous, Lotus Herbals, Borges, Schoolkart</li>
-          <li>Drove a <strong>200% revenue increase in 3 months</strong> for an FMCG brand through content &amp; digital marketing</li>
-        </ul>
+      <div class="logo-card">
+        <div class="logo-mark"><img src="assets/logos/snapdeal.png" alt="Snapdeal" width="52" height="52" loading="lazy"></div>
+        <div>
+          <div class="logo-org">Snapdeal</div>
+          <div class="logo-role">Senior Manager — Fashion &amp; Accessories</div>
+          <div class="logo-date">Apr 2015 — Aug 2017</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Apr 2015 — Aug 2017</div>
-        <div class="tl-role">Senior Manager — Fashion &amp; Accessories</div>
-        <div class="tl-org">Snapdeal</div>
-        <ul>
-          <li>Led a 5-person team; <strong>30% increase in unit sales</strong> in H1'16; "Outstanding Performance" award, Men's Fashion</li>
-        </ul>
+      <div class="logo-card">
+        <div class="logo-mark"><img src="assets/logos/nielsen.png" alt="Nielsen India" width="52" height="52" loading="lazy"></div>
+        <div>
+          <div class="logo-org">Nielsen India</div>
+          <div class="logo-role">Client Service Executive</div>
+          <div class="logo-date">Apr 2011 — Aug 2012</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">2013 — 2015</div>
-        <div class="tl-role">PGDM, Marketing</div>
-        <div class="tl-org">International Management Institute (IMI), New Delhi</div>
+      <div class="logo-card">
+        <div class="logo-mark logo-mark--text" aria-hidden="true">S</div>
+        <div>
+          <div class="logo-org">Synovate India</div>
+          <div class="logo-role">Research Associate</div>
+          <div class="logo-date">Jun 2010 — Feb 2011</div>
+        </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Apr 2011 — Aug 2012</div>
-        <div class="tl-role">Client Service Executive</div>
-        <div class="tl-org">Nielsen India</div>
-        <ul>
-          <li>Centre of Excellence for MOTOR, a shopper research protocol for The Coca-Cola Company across 10+ Nielsen markets in Asia &amp; Latin America</li>
-        </ul>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">Jun 2010 — Feb 2011</div>
-        <div class="tl-role">Research Associate</div>
-        <div class="tl-org">Synovate India</div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-date">2007 — 2010</div>
-        <div class="tl-role">Bachelor of Business Studies, Marketing</div>
-        <div class="tl-org">Shaheed Sukhdev College of Business Studies, Delhi University</div>
-      </div>
+    </div>
+
+    <div class="edu-list reveal">
+      <div class="edu-item"><strong>PGDM, Marketing</strong> — International Management Institute (IMI), New Delhi · 2013–2015</div>
+      <div class="edu-item"><strong>Bachelor of Business Studies, Marketing</strong> — Shaheed Sukhdev College of Business Studies, Delhi University · 2007–2010</div>
     </div>
   </div>
 </section>
